@@ -169,9 +169,14 @@ export default function CardProject() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button>
-              lien
-              <ExternalLink className="ml-4 h-4 w-4" />
+            <Button asChild>
+              <Link
+                href="https://github.com/Sensy-gmn/videogames"
+                target="_blank"
+              >
+                lien
+                <ExternalLink className="ml-4 h-4 w-4" />
+              </Link>
             </Button>
           </CardFooter>
         </Card>
