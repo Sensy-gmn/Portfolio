@@ -1,4 +1,10 @@
-import { ExternalLink } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  Linkedin,
+  MailPlus,
+  PhoneCall,
+} from "lucide-react";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
@@ -14,14 +20,10 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
-import { Textarea } from "./ui/textarea";
 
 export default function CardProject() {
   return (
@@ -185,45 +187,46 @@ export default function CardProject() {
       <div className="flex justify-center">
         <Dialog>
           <DialogTrigger asChild>
-            <Button>Formulaire de contact</Button>
+            <Button>Me contacter</Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px] lg:max-w-[600px]">
             <DialogHeader>
-              <DialogTitle>Formulaire de contact</DialogTitle>
+              <DialogTitle>Moyens de contact</DialogTitle>
               <DialogDescription>
-                Remplissez le formulaire ci-dessous.
+                Choisissez une methode de contact ci-dessous.
               </DialogDescription>
             </DialogHeader>
 
             <div className="grid gap-4 py-4">
               <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="name" className="text-right">
-                  nom :
-                </Label>
-                <Input id="name" value="nom" className="col-span-3" />
-              </div>
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="username" className="text-right">
-                  prenom :
-                </Label>
-                <Input id="username" value="prenom" className="col-span-3" />
-              </div>
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="email" className="text-right">
-                  email :
-                </Label>
-                <Input id="email" value="email" className="col-span-3" />
-              </div>
-              <div className="grid grid-cols-4 items-center gap-4 mt-4">
-                <Label htmlFor="message" className="text-right">
-                  message :
-                </Label>
-                <Textarea id="message" value="message" className="col-span-3" />
+                <Button variant="outline" asChild>
+                  <Link
+                    href="https://www.linkedin.com/in/alexandre-goumain/"
+                    target="_blank"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild>
+                  <Link href="https://github.com/Sensy-gmn" target="_blank">
+                    <Github className="w-4 h-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild>
+                  <Link
+                    href="mailto:alexandre26goumain@gmail.com"
+                    target="_blank"
+                  >
+                    <MailPlus className="w-4 h-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild>
+                  <Link href="tel:+33643294346" target="_blank">
+                    <PhoneCall className="w-4 h-4" />
+                  </Link>
+                </Button>
               </div>
             </div>
-            <DialogFooter>
-              <Button type="submit">Envoyer</Button>
-            </DialogFooter>
           </DialogContent>
         </Dialog>
       </div>
