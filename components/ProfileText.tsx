@@ -7,28 +7,28 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Github, Linkedin, MailPlus, Plus } from "lucide-react";
+import { Github, Linkedin, MailPlus } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function ProfileText() {
   return (
-    <div className="max-w-sm md:max-w-md justify-center flex flex-col">
+    <div className="max-w-md md:max-w-md justify-center flex flex-col">
       <Card>
         <CardHeader>
-          <CardTitle>Développeur Full Stack</CardTitle>
-          <CardDescription>Bonjour, Je suis Alexandre Goumain.</CardDescription>
+          <CardTitle className="text-2xl md:text-3xl">
+            Développeur Full Stack
+          </CardTitle>
+          <CardDescription className="text-lg md:text-xl">
+            Bonjour, Je suis Alexandre Goumain.
+          </CardDescription>
         </CardHeader>
         <CardContent>
-          <p>
-            Je suis un développeur full stack curieux et très motivé.
-            J&apos;aime apprendre de nouvelles choses et les mettre en pratique.
+          <p className="text-sm md:text-lg">
+            Développeur full stack curieux et très motivé, J&apos;aime apprendre
+            de nouvelles choses et les mettre en pratique.
           </p>
         </CardContent>
         <CardFooter className="flex flex-row justify-between gap-2 mr-4">
-          <Button>
-            Voir plus
-            <Plus className="ml-3 w-4 h-4" />
-          </Button>
           <div className="flex flex-row gap-4">
             <Button
               variant="outline"
