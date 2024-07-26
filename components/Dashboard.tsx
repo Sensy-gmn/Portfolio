@@ -1,8 +1,23 @@
 "use client";
 
-import { Menu, Sunrise } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  MailPlus,
+  Menu,
+  PhoneCall,
+  Sunrise,
+} from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 export default function Dashboard() {
@@ -16,30 +31,63 @@ export default function Dashboard() {
           >
             Accueil
           </Link>
+
           <Link
-            href="#"
+            href="/assets/Copie de CV Alexandre Goumain (6) (1).pdf"
             className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
-          >
-            à propos
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
-          >
-            projets
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
+            download="CV Alexandre Goumain"
           >
             CV
           </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
-          >
-            contact
-          </Link>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Link
+                href="#"
+                className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
+              >
+                contact
+              </Link>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px] lg:max-w-[600px]">
+              <DialogHeader>
+                <DialogTitle>Moyens de contact</DialogTitle>
+                <DialogDescription>
+                  Choisissez une methode de contact ci-dessous.
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="grid gap-4 py-4">
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Button variant="outline" asChild>
+                    <Link
+                      href="https://www.linkedin.com/in/alexandre-goumain/"
+                      target="_blank"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <Link href="https://github.com/Sensy-gmn" target="_blank">
+                      <Github className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <Link
+                      href="mailto:alexandre26goumain@gmail.com"
+                      target="_blank"
+                    >
+                      <MailPlus className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <Link href="tel:+33643294346" target="_blank">
+                      <PhoneCall className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
 
           <Button variant="outline" size="icon" className="">
             <Sunrise
@@ -51,6 +99,7 @@ export default function Dashboard() {
           </Button>
         </nav>
 
+        {/* mobile menu */}
         <Sheet>
           <SheetTrigger asChild>
             <Button
@@ -67,30 +116,76 @@ export default function Dashboard() {
               <Link href="#" className="hover:text-foreground">
                 Accueil
               </Link>
+
               <Link
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                à propos
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                projets
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
+                href="/assets/Copie de CV Alexandre Goumain (6) (1).pdf"
+                className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
+                download="CV Alexandre Goumain"
               >
                 CV
               </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                contact
-              </Link>
+
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Link
+                    href="#"
+                    className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
+                  >
+                    contact
+                  </Link>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-[425px] lg:max-w-[600px]">
+                  <DialogHeader>
+                    <DialogTitle>Moyens de contact</DialogTitle>
+                    <DialogDescription>
+                      Choisissez une methode de contact ci-dessous.
+                    </DialogDescription>
+                  </DialogHeader>
+
+                  <div className="grid gap-4 py-4">
+                    <div className="grid grid-cols-4 items-center gap-4">
+                      <Button variant="outline" asChild>
+                        <Link
+                          href="https://www.linkedin.com/in/alexandre-goumain/"
+                          target="_blank"
+                        >
+                          <Linkedin className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                      <Button variant="outline" asChild>
+                        <Link
+                          href="https://github.com/Sensy-gmn"
+                          target="_blank"
+                        >
+                          <Github className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                      <Button variant="outline" asChild>
+                        <Link
+                          href="mailto:alexandre26goumain@gmail.com"
+                          target="_blank"
+                        >
+                          <MailPlus className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                      <Button variant="outline" asChild>
+                        <Link href="tel:+33643294346" target="_blank">
+                          <PhoneCall className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
+
+              <Button variant="outline" size="icon" className="">
+                <Sunrise
+                  className=""
+                  onClick={() => {
+                    document.body.classList.toggle("dark");
+                  }}
+                />
+              </Button>
             </nav>
           </SheetContent>
         </Sheet>

@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Dashboard />
       <main className="container mx-auto">
-        <section className="flex flex-col gap-5 md:flex-row sm:justify-between md:mt-8 items-center">
+        <section className="flex flex-col gap-5 md:flex-row sm:justify-between md:mt-8 items-center mx-9">
           <ProfileText />
 
           <div className="flex flex-row justify-center">
@@ -22,6 +22,8 @@ export default function Home() {
             />
           </div>
         </section>
+
+        <h2 className="text-2xl font-bold text-center my-10">Mes projets :</h2>
 
         <section className="flex flex-col gap-5 md:flex-row sm:justify-between md:mt-8 items-center">
           <CardProject />
