@@ -36,9 +36,33 @@ export default function CardProject() {
           </CardHeader>
           <CardContent className="flex flex-col justify-start gap-2">
             <CardDescription>
-              Développement d&apos;un site vitrine e-commerce de cigarette
-              éléctronique - panneau d&apos;administration bien avancé -
-              front-end client en cours de développement.
+              Développement d&apos;un site e-commerce de cigarette éléctronique
+              <br />
+              <br />
+              <span className="font-bold">Fonctionnalités :</span>
+              <ul>
+                <li>créer un compte</li>
+                <li>consulter les produits disponibles</li>
+                <li>ajouter des produits à son panier</li>
+                <li>les supprimer de son panier</li>
+                <li>passer une commande</li>
+                <li>consulter son panier</li>
+                <li>consulter ses commandes</li>
+                <li>modifier ses informations personnelles</li>
+                <li>modifier ses mot de passe</li>
+                <li>supprimer son compte</li>
+              </ul>
+              <br />
+              <span className="font-bold">Administration :</span>
+              <ul>
+                <li>consulter les commandes</li>
+                <li>statistiques clés</li>
+                <li>ajouter des produits</li>
+                <li>modifier des produits</li>
+                <li>supprimer des produits</li>
+              </ul>
+              <br />
+              Front-end client en cours de développement.
             </CardDescription>
             <div className="">
               <Badge className="bg-gray-500 w-fit font-light whitespace-nowrap">
@@ -67,7 +91,7 @@ export default function CardProject() {
               </Badge>
             </div>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="bottom-0">
             <Button asChild>
               <Link
                 href="https://github.com/Sensy-gmn/big-vape"
@@ -88,12 +112,15 @@ export default function CardProject() {
           <CardContent className="flex flex-col justify-start gap-2">
             <CardDescription>
               Première application web en Symfony, un CRUD complet avec
-              l&apos;utilisation de la base de données MySQL. applocation web de
-              recettes de cuisine avec possibilité de créer un compte, de
-              consulter les recettes disponibles, de les ajouter à sa liste de
-              recettes favoris et de les supprimer de sa liste de recettes
-              favoris et d&apos;y ajouter des étapes de préparation avec des
-              ingrédients.
+              l&apos;utilisation de la base de données MySQL. application web de
+              recettes de cuisine avec possibilité de :
+              <ul>
+                <li>créer un compte</li>
+                <li>consulter les recettes disponibles</li>
+                <li>ajouter des recettes à sa liste de favoris</li>
+                <li>les supprimer de sa liste de favoris</li>
+                <li>ajouter des étapes de préparation avec des ingrédients</li>
+              </ul>
             </CardDescription>
             <div className="">
               <Badge className="bg-gray-500 w-fit font-light">
@@ -104,7 +131,7 @@ export default function CardProject() {
               <Badge className="bg-gray-500 w-fit font-light">PHP</Badge>
             </div>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="">
             <Button asChild>
               <Link
                 href="https://github.com/Sensy-gmn/symfony-crud"
@@ -127,7 +154,9 @@ export default function CardProject() {
           <CardContent className="flex flex-col justify-start gap-2">
             <CardDescription>
               Accès au portfolio ainsi qu&apos;aux projets en cours de
-              développement disponibles sur mon GitHub. Déploiement sur Vercel.
+              développement disponibles sur mon GitHub.
+              <br />
+              Déploiement sur Vercel.
             </CardDescription>
             <div className="">
               <Badge className="bg-gray-500 w-fit font-light">TypeScript</Badge>
@@ -142,9 +171,14 @@ export default function CardProject() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button>
-              lien
-              <ExternalLink className="ml-4 h-4 w-4" />
+            <Button asChild>
+              <Link
+                href="https://github.com/Sensy-gmn/portfolio"
+                target="_blank"
+              >
+                lien
+                <ExternalLink className="ml-4 h-4 w-4" />
+              </Link>
             </Button>
           </CardFooter>
         </Card>
@@ -158,11 +192,20 @@ export default function CardProject() {
           </CardHeader>
           <CardContent className="flex flex-col justify-start gap-2">
             <CardDescription>
-              possibilité de créer un compte, de consulter les jeux disponibles,
-              de les ajouter à sa liste de jeux favoris et de les supprimer de
-              sa liste de jeux favoris. <br />
-              Administration du site : ajout, modification et suppression des
-              jeux.
+              <span className="font-bold">Fonctionnalités :</span>
+              <br />
+              <br />
+              <ul>
+                <li>créer un compte</li>
+                <li>consulter les jeux disponibles</li>
+                <li>les ajouter à sa liste de jeux favoris</li>
+                <li>les supprimer de sa liste de jeux favoris</li>
+              </ul>
+              <br />
+              <span className="font-bold">Administration :</span>
+              <br />
+              <br />
+              ajout, modification et suppression des jeux.
             </CardDescription>
             <div className="">
               <Badge className="bg-gray-500 w-fit font-light">HTML</Badge>
