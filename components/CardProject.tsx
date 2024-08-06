@@ -64,7 +64,7 @@ export default function CardProject() {
               <br />
               Front-end client en cours de développement.
             </CardDescription>
-            <div className="">
+            <div className="flex flex-wrap gap-2">
               <Badge className="bg-gray-500 w-fit font-light whitespace-nowrap">
                 TypeScript
               </Badge>
@@ -95,8 +95,7 @@ export default function CardProject() {
             <Button asChild>
               <Link
                 href="https://github.com/Sensy-gmn/big-vape"
-                target="_blank"
-              >
+                target="_blank">
                 lien
                 <ExternalLink className="ml-4 h-4 w-4" />
               </Link>
@@ -122,7 +121,7 @@ export default function CardProject() {
                 <li>ajouter des étapes de préparation avec des ingrédients</li>
               </ul>
             </CardDescription>
-            <div className="">
+            <div className="flex flex-wrap gap-2">
               <Badge className="bg-gray-500 w-fit font-light">
                 HTML - TWIG
               </Badge>
@@ -135,8 +134,7 @@ export default function CardProject() {
             <Button asChild>
               <Link
                 href="https://github.com/Sensy-gmn/symfony-crud"
-                target="_blank"
-              >
+                target="_blank">
                 lien
                 <ExternalLink className="ml-4 h-4 w-4" />
               </Link>
@@ -158,7 +156,7 @@ export default function CardProject() {
               <br />
               Déploiement sur Vercel.
             </CardDescription>
-            <div className="">
+            <div className="flex flex-wrap gap-2">
               <Badge className="bg-gray-500 w-fit font-light">TypeScript</Badge>
               <Badge className="bg-gray-500 w-fit font-light">React</Badge>
               <Badge className="bg-gray-500 w-fit font-light">Next.js</Badge>
@@ -174,8 +172,7 @@ export default function CardProject() {
             <Button asChild>
               <Link
                 href="https://github.com/Sensy-gmn/portfolio"
-                target="_blank"
-              >
+                target="_blank">
                 lien
                 <ExternalLink className="ml-4 h-4 w-4" />
               </Link>
@@ -207,7 +204,7 @@ export default function CardProject() {
               <br />
               ajout, modification et suppression des jeux.
             </CardDescription>
-            <div className="">
+            <div className="flex flex-wrap gap-2">
               <Badge className="bg-gray-500 w-fit font-light">HTML</Badge>
               <Badge className="bg-gray-500 w-fit font-light">Bootstrap</Badge>
               <Badge className="bg-gray-500 w-fit font-light">JavaScript</Badge>
@@ -217,8 +214,7 @@ export default function CardProject() {
             <Button asChild>
               <Link
                 href="https://github.com/Sensy-gmn/videogames"
-                target="_blank"
-              >
+                target="_blank">
                 lien
                 <ExternalLink className="ml-4 h-4 w-4" />
               </Link>
@@ -245,8 +241,7 @@ export default function CardProject() {
                 <Button variant="outline" asChild>
                   <Link
                     href="https://www.linkedin.com/in/alexandre-goumain/"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <Linkedin className="w-4 h-4" />
                   </Link>
                 </Button>
@@ -258,8 +253,7 @@ export default function CardProject() {
                 <Button variant="outline" asChild>
                   <Link
                     href="mailto:alexandre26goumain@gmail.com"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <MailPlus className="w-4 h-4" />
                   </Link>
                 </Button>
