@@ -147,33 +147,35 @@ export default function CardProject() {
         {/* Projet 3 */}
         <Card x-chunk="dashboard-01-chunk-0">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="font-bold text-2xl">
-              Portfolio actuel
-            </CardTitle>
+            <CardTitle className="font-bold text-2xl">Food Info Hub</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col justify-start gap-2">
             <CardDescription>
-              Accès au portfolio ainsi qu&apos;aux projets en cours de
-              développement disponibles sur mon GitHub.
-              <br />
-              Déploiement sur Vercel.
+              application mobile + site web, permettant aux utilisateurs de
+              créer un compte,
+              <br /> référencer des produits alimentaires,
+              <br /> consulter les informations nutritionnelles des produits,
+              <br /> scanner les codes-barres des produits pour obtenir les
+              informations nutritionnelles,
+              <br /> ajouter des produits à leur liste de favoris,
+              <br /> de partager des informations avec la communauté pour
+              accessibilité par tous.
             </CardDescription>
             <div className="">
+              <Badge className="bg-gray-500 w-fit font-light">JavaScript</Badge>
               <Badge className="bg-gray-500 w-fit font-light">TypeScript</Badge>
-              <Badge className="bg-gray-500 w-fit font-light">React</Badge>
-              <Badge className="bg-gray-500 w-fit font-light">Next.js</Badge>
-              <Badge className="bg-gray-500 w-fit font-light whitespace-nowrap">
-                UI-Shadcn
+              <Badge className="bg-gray-500 w-fit font-light">
+                React Native
               </Badge>
               <Badge className="bg-gray-500 w-fit font-light whitespace-nowrap">
-                Tailwind CSS
+                API - (maison)
               </Badge>
             </div>
           </CardContent>
           <CardFooter>
             <Button asChild>
               <Link
-                href="https://github.com/Sensy-gmn/portfolio"
+                href="https://github.com/Sensy-gmn/Food-info-hub"
                 target="_blank"
               >
                 lien
@@ -211,6 +213,7 @@ export default function CardProject() {
               <Badge className="bg-gray-500 w-fit font-light">HTML</Badge>
               <Badge className="bg-gray-500 w-fit font-light">Bootstrap</Badge>
               <Badge className="bg-gray-500 w-fit font-light">JavaScript</Badge>
+              <Badge className="bg-gray-500 w-fit font-light">PHP</Badge>
             </div>
           </CardContent>
           <CardFooter>
@@ -247,25 +250,28 @@ export default function CardProject() {
                     href="https://www.linkedin.com/in/alexandre-goumain/"
                     target="_blank"
                   >
-                    <Linkedin className="w-4 h-4" />
+                    <Linkedin className="w-6 h-6" />
                   </Link>
                 </Button>
+
                 <Button variant="outline" asChild>
                   <Link href="https://github.com/Sensy-gmn" target="_blank">
-                    <Github className="w-4 h-4" />
+                    <Github className="w-6 h-6" />
                   </Link>
                 </Button>
+
                 <Button variant="outline" asChild>
                   <Link
                     href="mailto:alexandre26goumain@gmail.com"
                     target="_blank"
                   >
-                    <MailPlus className="w-4 h-4" />
+                    <MailPlus className="w-6 h-6" />
                   </Link>
                 </Button>
+
                 <Button variant="outline" asChild>
                   <Link href="tel:+33643294346" target="_blank">
-                    <PhoneCall className="w-4 h-4" />
+                    <PhoneCall className="w-6 h-6" />
                   </Link>
                 </Button>
               </div>

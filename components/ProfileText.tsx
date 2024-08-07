@@ -30,33 +30,44 @@ export default function ProfileText() {
         </CardContent>
         <CardFooter className="flex flex-row justify-between gap-2 mr-4">
           <div className="flex flex-row gap-4">
-            <Button
-              variant="outline"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/alexandre-goumain/",
-                  "_blank"
-                )
-              }
-            >
-              <Linkedin className="w-4 h-4" />
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() =>
-                window.open("https://github.com/Sensy-gmn", "_blank")
-              }
-            >
-              <Github className="w-4 h-4" />
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() =>
-                window.open("mailto:alexandre26goumain@gmail.com", "_blank")
-              }
-            >
-              <MailPlus className="w-4 h-4" />
-            </Button>
+            <div className="flex flex-col items-center gap-2">
+              <Button
+                variant="outline"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/alexandre-goumain/",
+                    "_blank"
+                  )
+                }
+              >
+                <Linkedin className="w-6 h-6" />
+              </Button>
+              <p className="text-xs font-bold">linkedin</p>
+            </div>
+
+            <div className="flex flex-col items-center gap-2">
+              <Button
+                variant="outline"
+                onClick={() =>
+                  window.open("https://github.com/Sensy-gmn", "_blank")
+                }
+              >
+                <Github className="w-6 h-6" />
+              </Button>
+              <p className="text-xs font-bold">github</p>
+            </div>
+
+            <div className="flex flex-col items-center gap-2">
+              <Button
+                variant="outline"
+                onClick={() =>
+                  window.open("mailto:alexandre26goumain@gmail.com", "_blank")
+                }
+              >
+                <MailPlus className="w-6 h-6" />
+              </Button>
+              <p className="text-xs font-bold">mail</p>
+            </div>
           </div>
         </CardFooter>
       </Card>
