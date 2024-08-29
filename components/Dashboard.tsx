@@ -33,7 +33,7 @@ export default function Dashboard() {
           </Link>
 
           <Link
-            href="/assets/Copie de CV Alexandre Goumain-3.pdf"
+            href="/assets/CV_2024.pdf"
             className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap text-2xl"
             download="CV Alexandre Goumain"
           >
@@ -118,7 +118,7 @@ export default function Dashboard() {
               </Link>
 
               <Link
-                href="/assets/Copie de CV Alexandre Goumain-3.pdf"
+                href="/assets/CV_2024.pdf"
                 className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap text-2xl"
                 download="CV Alexandre Goumain"
               >
